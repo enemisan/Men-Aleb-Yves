@@ -9,8 +9,13 @@ mark {
 }
 
 .launch {
+    margin-top: 70px;
     padding-left: 200px;
     padding-right: 200px;
+}
+
+.education {
+    margin-top: 70px;
 }
 
 .launch-flex {
@@ -109,7 +114,7 @@ mark {
 }
 
 @media screen and (max-width: 969px) {
-    .launch {
+    .launch, .education {
         padding-top: 100px;
     }
 

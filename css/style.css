@@ -123,7 +123,7 @@ header {
 }
 
 section {
-  padding: 160px 20px;
+  padding: 90px 20px;
 }
 
 .home {
@@ -388,6 +388,7 @@ header.sticky {
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  /* grid-template-columns: repeat(4, 25%); */
   grid-gap: 2rem;
   align-items: center;
   margin-top: 5rem;
@@ -570,6 +571,16 @@ header.sticky {
   height: 300px;
   object-fit: center;
   border-radius: 12px;
+}
+
+@media screen and (max-width:775px) {
+  .col img {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    object-fit: center;
+    border-radius: 12px;
+  }
 }
 
 /* .layer {
@@ -772,6 +783,10 @@ header.sticky {
     margin-bottom: 20px;
   }
 
+  .contact-ctn {
+    width: 74%; 
+  }
+
   .contact-ctn form input,
   .contact-ctn form textarea,
   .contact-ctn form button {
@@ -937,6 +952,7 @@ header.sticky {
   }
 
   .about {
+    margin-top: 30px;
     grid-template-columns: 1fr;
   }
 
@@ -970,5 +986,18 @@ header.sticky {
 @media (max-width: 540px) {
   .contact .action form input[type="email"] {
     width: 310px;
+  }
+}
+
+
+@media screen and (max-width: 1552px) {
+  .col:nth-child(4), .row:nth-child(4) {
+    grid-column: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .col:nth-child(4), .row:nth-child(4) {
+    grid-column: initial;
   }
 }
