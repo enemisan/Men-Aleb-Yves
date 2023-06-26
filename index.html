@@ -1,0 +1,403 @@
+<!-- /*! @license
+
+	Copyright 2023 Men Aleb Yves.
+
+	Licensed under the GNU General Public License 3.0 for
+	compatible open source projects and non-commercial use.
+*/ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Men Aleb Yves</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<link rel="stylesheet" href="docs/flickity.css" media="screen">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/loader.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="docs/jQuery/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+	<!-- Loader -->
+	<div id="loading">
+        <img id="loading-image" src="img/mascot_logo.png" alt="Loading..." />
+    </div>
+
+    <script>
+        $(window).load(function () {
+            $('#loading').hide();
+        });
+    </script>
+
+	<!-- Modal -->
+	<!-- Donate Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-wrap" id="modal-wrap">
+            <div class="modal-close" id="modal-close"><img src="img/close.svg" alt=""></div>
+            <div class="modal-img-ctn">
+                <div class="main-carousel" data-flickity='{ "autoPlay": 3000, "wrapAround": true }'>
+					<div class="carousel-cell" style="height: 100vh;">
+						<img src="img/awareness1.jpeg" alt="">
+					</div>
+					<div class="carousel-cell">
+						<img src="img/awareness2.jpeg" alt="">
+					</div>
+					<div class="carousel-cell">
+						<img src="img/launching.jpeg" alt="">
+					</div>
+					<div class="carousel-cell">
+						<img src="img/championship.jpeg" alt="">
+					</div>
+					<div class="carousel-cell">
+						<img src="img/image1.jpg" alt="">
+					</div>
+					<div class="carousel-cell">
+						<img src="img/image3.jpg" alt="">
+					</div>
+					<div class="carousel-cell">
+						<img src="img/image3.jpg" alt="">
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	<!--------header---->
+	<header>
+		<a href="#" class="logo"><img src="img/logo_white.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navlist">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#portfolio">Activities</a></li>
+			<li><a href="#service">Events</a></li>
+			<li><a href="#awareness">Awareness</a></li>
+			<li><a href="#annual-projects">Annual Projects</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+			<li><a href="#donate" id="mobile-donate">Donate Now</a></li>
+		</ul>
+		<a href="#" class="top-btn">Donate Now</a>
+	</header>
+
+	<!--------home---->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h1>So his heart keeps beating within us...</h1>
+			<h5>Yves' heart has stopped but Men Aleb Yves is his beating heart.</h5>
+			<p>We are commited to making a difference- one life at a time by promoting humanitarian efforts and creating
+				safer environments for everyone.</p>
+		</div>
+
+		<div class="home-img">
+			<img src="img/mascot_logo.png">
+		</div>
+	</section>
+
+	<!--------About---->
+	<section class="about" id="about">
+		<div class="about-img">
+			<video src="img/yves.mp4" controls poster="img/yves.mp4"></video>
+		</div>
+
+		<div class="about-text">
+			<h3>About Us</h3>
+			<h2>The heart of Yves Douaihy stopped beating as a result of a Sudden Cardiac Arrest.</h2>
+			<p>To honor his memory and help assist when such tragedies happen again, MenalebYves was founded on May 31,
+				2021,
+				which also marked Yves' birthday.</p>
+			<a href="#" class="btn">JOIN US</a>
+		</div>
+	</section>
+
+	<section class="mission-section">
+		<h1 class="section-title">Our mission is to provide public spaces and sports arenas with First Aid Medical
+			Supplies<br> and the Automated External Defibrillator.</h1>
+		<p class="section-title">We work on raising awareness among the youth and promoting humanitarian efforts.</p>
+		<div class="items">
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/mission1.png">
+				</div>
+				<h3>Medical</h3>
+				<p>To make life-saving medical equipment and first aid materials accessible in as many public places as
+					possible.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/mission2.png">
+				</div>
+				<h3>Humanitarian</h3>
+				<p>To provide humanitarian efforts to our community, such as healthcare, education, personal support,
+					and
+					economic aid.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/mission3.png">
+				</div>
+				<h3>Awareness</h3>
+				<p>To raise awareness and spread knowledge about how to respond effectively in emergency situations.</p>
+			</div>
+
+
+		</div>
+	</section>
+	<!--------portfolio---->
+	<section class="portfolio" id="portfolio">
+		<div class="heading">
+			<h2>Our activities</h2>
+			<p>Impacting Lives, One Activity at a Time: Discover Our Foundation's Work</p>
+		</div>
+
+		<div class="portfolio-content">
+			<a href="activities/index.html#launch" class="col">
+				<img src="img/launching.jpeg">
+				<div class="layer">
+					<h3>Launching - 31 May 2021</h3>
+				</div>
+			</a>
+
+			<a href="activities/index.html#equip-salem" class="col">
+				<img src="img/equip.jpeg">
+				<div class="layer">
+					<h3>Equip Salam stadium - Zgharta - May 2021</h3>
+				</div>
+			</a>
+			<a href="activities/index.html#stadium-equip" class="col">
+				<img src="img/equipment.jpeg">
+				<div class="layer">
+					<h3>Stadiums Equipment</h3>
+				</div>
+			</a>
+
+			<a href="activities/index.html#shools-championship" class="col">
+				<img src="img/championship.jpeg">
+				<div class="layer">
+					<h3>Schools Championship</h3>
+				</div>
+			</a>
+		</div>
+	</section>
+	<section class="service" id="service">
+		<div class="heading">
+			<h2>Our Events</h2>
+			<p>Where Moments Become Memories</p>
+
+		</div>
+
+		<div class="service-content">
+			<div class="row">
+				<div class="s s-one">
+					<img src="img/image.jpg">
+				</div>
+				<h5>Kids Football Tournament</h5>
+				<p>MenalebYves passionately hosts a football tournament that embraces players of all ages. This event
+					aims to
+					create a fun and inclusive environment for the kids that are participating allowing them to connect.
+				</p>
+			</div>
+
+			<div class="row">
+				<div class="s s-tow">
+					<img src="img/image1.jpg">
+				</div>
+				<h5>Football Tournament</h5>
+				<p>An annual tournament brings together family, friends, and others who share a passion for the game
+					and, more
+					importantly, a deep connection to Yves</p>
+			</div>
+
+			<div class="row">
+				<div class="s s-three">
+					<img src="img/image3.jpg">
+				</div>
+				<h5>Y Show</h5>
+				<p>The Y show is a heartfelt fundraising event brought to life by the passionate team at MenalebYves.
+					And what
+					better way to express emotion than through the universal language of "Art"?</p>
+			</div>
+
+			<div class="row">
+				<div class="s s-four">
+					<img src="img/image4.jpg">
+				</div>
+				<h5>Barbara</h5>
+				<p>To maintain Saint Barbara's traditions, MenalebYves organizes a joyous costume party to the
+					delightful sight
+					of children dressed up and singing their hearts out.</p>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="awarness" id="awareness">
+		<div class="heading">
+			<h2>Awareness</h2>
+			<p>Awakening Hearts, Creating Impact</p>
+		</div>
+
+		<div class="portfolio-content">
+			<a href="awareness/index.html#education" class="col-2">
+				<img src="img/awareness.jpeg">
+				<div class="layer-2">
+					<h3>Education Sessions</h3>
+				</div>
+			</a>
+
+			<a href="awareness/index.html#first-aid" class="col-2">
+				<img src="img/awareness1.jpeg">
+				<div class="layer-2">
+					<h3>First Aid Sessions</h3>
+				</div>
+			</a>
+			<a href="awareness/index.html#earthquake" class="col-2">
+				<img src="img/awareness2.jpeg">
+				<div class="layer-2">
+					<h3>Earthquake Awareness Sessions</h3>
+				</div>
+			</a>
+		</div>
+	</section>
+
+
+	<!-- Annual Projects -->
+	<section class="annual-projects" id="annual-projects">
+		<h2>Orphanage Karm Saddeh 2022-2023</h2>
+		<div class="ap-card-ctn">
+			<div class="ap-card">
+				<div class="ap-card-img">
+					<img src="img/awareness.jpeg" alt="">
+				</div>
+				<div class="ap-card-top">
+					<p>Education</p>
+				</div>
+				<div class="ap-card-bottom">
+					<p>Driven by a passion for education and social equality, MenalebYves has taken a heartfelt step in
+						providing the Karm Saddeh orphanage with stationary and school supplies.</p>
+				</div>
+			</div>
+			<div class="ap-card">
+				<div class="ap-card-img">
+					<img src="img/awareness1.jpeg" alt="">
+				</div>
+				<div class="ap-card-top">
+					<p>Social</p>
+				</div>
+				<div class="ap-card-bottom">
+					<p>Offering a series of nurturing activities aimed at fostering the development of these precious
+						children, leaving a lasting impact on their lives.</p>
+				</div>
+			</div>
+			<div class="ap-card">
+				<div class="ap-card-img">
+					<img src="img/awareness.jpeg" alt="">
+				</div>
+				<div class="ap-card-top">
+					<p>Personal</p>
+				</div>
+				<div class="ap-card-bottom">
+					<p>Offering orthopedagogy and psychomotricity sessions to support the mental health and well-being
+						of the children following up with each case to help them cope with their issues</p>
+				</div>
+			</div>
+			<div class="ap-card">
+				<div class="ap-card-img">
+					<img src="img/awareness.jpeg" alt="">
+				</div>
+				<div class="ap-card-top">
+					<p>Awareness</p>
+				</div>
+				<div class="ap-card-bottom">
+					<p>Warde Bou Daher, providing an engaging discussion about sexual education for all the kids to be
+						prepared in the right way.</p>
+				</div>
+			</div>
+			<div class="ap-card">
+				<div class="ap-card-img">
+					<img src="img/awareness2.jpeg" alt="">
+				</div>
+				<div class="ap-card-top">
+					<p>Health</p>
+				</div>
+				<div class="ap-card-bottom">
+					<p>Dentist Tony Frangieh offering an educational session to the kids about maintaining the health of
+						their teeth and providing them with tooth brushes.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Contact -->
+	<section class="contact" id="contact">
+		<h2>Contact Us</h2>
+		<p>Don't like forms? Send me an email.</p>
+		<div class="contact-ctn">
+			<form action="">
+				<input type="text" name="name" placeholder="Name" required>
+				<input type="email" name="email" placeholder="Email Address" required>
+				<input type="number" name="phone" placeholder="Phone Number" required>
+				<textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+				<button type="submit">Send</button>
+			</form>
+			<div class="contact-socials">
+				<div>
+					<!-- Facebook -->
+					<a href="#">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAihJREFUSEuVVe2V2zAMA7xIc5M0maTxJEkmiTvJpZOcJzH6KFGftvLu9CPxsylSBECI+O4iAIWfdsfBqzrAPv98edKSe1y4KlDvKhsknQH8BnAG7JkrgBcA+/9H8gW8KTDqUNIJwDMmdmQoCAzpIlThaQV0IScrWFZ13nyAVEzSDcB9iF3OnSMs+cKJjx1FPXcpecixS+Qv4t8q4NSReCf5aBqpidq02YavN6zbSR8kF4uxvVvoVvcAnbCCmAMvfvJ4AK8i6dPJjC+9jYI7PkhakvAtFNh0Axs4V5IfdUykTLoKeL7R7UJOM2FEW/x2AvinUlfmXcBlcnXlfNJ2A+jE7lk00hO+2nQFg8J8NdzYuxxbFdBTwHVPbM4xc4rYy2E5PEZE7zWRl4R+gsjINe0fL6EUOJBxp7rIQ5qUyMH2BbAvkANT1X4wizDq2QNIBnTCr5P2KfDcQCSsnOJJ3hQInXdwLSRn01mWacC1ml7fYLqPWJo8wwaZ9k+VVezmRsAyhQJuJi5T8xybg93yYjZA70kuROTYRvY1nqXl/DST0+IdHHtVDH3RFNSYXVJidNCRVZQOanvYN3wpVlFBlEdmP/rpUygwsIcU05kdXUWd9sxRZdPYnq7rAPdOOf49CiFdrEPrKReOzu6Uo0Ezpc3mPaMr2930+G7zQmZqfj1GYwTwS8DfKch3vBq7DmGjOzT7e2l/N4CDq7ktPypwcMhyGzru9V5//g9n2C0sLe1X2AAAAABJRU5ErkJggg=="/>
+					</a>
+					
+
+					<!-- Twitter -->
+					<a href="#">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhJJREFUSEuNVdt1qzAQnFElpJLrVJJQie1KjCsxnYRKmHt2kWAFIo5+0EH7HM2sCFsEoPzJ++0/QciO3bC998PGMvuQ4LDPLo2cXtCZ/ZapJDjYxpB1Z/VJCVWXsHW5+L4tZXOPWL51Wxs8A7C+m2Al6QLgCqBzqIghkfd5Vgfii+Q9lr26SnoB6Mk0bSDXlUr6BvBYzrl+AEyeEOgTOcQrWhPMkuiGGhLTvTAn3qg0F99W5+Y7AnwycSzMdENJlv2neAm4EXiSnBx5K3Yu1Z+jCuCT5Bipv2IgzQaR4VuWVTTJKlo66wA+FnRMG4WGGS5gIFNfsSgSzPEVrqBjGfGtS84JNhLmZMLAxL6pA4NIwE/gbQOHtdJD9nzSkxyiYxXPWSRcrP1KIhvPfv8vfDDR2FSpK9LUoHkZ1hFf3/8hJ8kdALtR4bDPuphYBHwX67PYW51uscJTWFfR1IztYHYh6XGA6JClYtFEpo9qKgd9VnhZHEk2Bm5BE3FotUTwmcjRtOKCWUdtKbMxj2fNHYUvULfYTWToxpw0HEaLl0H4rUTtL4r29q8EbO78thbVltV6rMq/rIMXl4G1rIagcjcW1C61omSrkr0ObPyaDv4J7EqyDIUFGwU8kwduPErhYtdp2riXWiXV7Ixv8j5F2+1PL9qh9cPD1n5I/ZrPj3Zhz1ptvKKxl+oODskOrHgDS6OI/zXs/SAlRnBFAAAAAElFTkSuQmCC"/>
+					</a>
+					
+					<!-- Instagram -->
+					<a href="#">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAnBJREFUSEuNljGOFDEURF91Skw+5AjEBWDnGEhI7KRIIHGC3b0BCIh3kJDIucDO3gBxgW0iAnICAhey291te7p36WTGv21X/fL/5RbTI8DzMP7LoaM3KfB/8+OsRYiF5TX4iN5E26GOyOSAcCa5lsbCzitJ1RkIHLwxvBScACdRuCrVtCJF+2GxD6ALaRzX8k5ap6nBp4jLkl/aagGlCfWYvTpdtLJPY9sbzM0C3Ux4+hkzmNcOJHrErpMOY7kMZ5CmCTtE5qeTAEcyZ8419S3wDDgfVPO+U7cb9ywAINg3gk3Js8DYA73hp4YNTw19Jz2wHUllWX2Qum1Z4qVEHljk0MCoB+0U07bvp1w7/XYIG6OrfDabgkgv6cE4rorDdt1pA1iU4C/wIksRo9fAF+AXcFMraaRu2ncVICeyl7Sz/Ql41RzJx056HeyrWMrlu07S2OhFo6VDzhlMh7lD/ga6xjxsquuHpMcOPkOczwBlBqLq5CRRXSFx4QcgsnzUVNf3TnoS7DPwudGEnzLIlXl7BnCQtLX9HnjTALyT9Nb2VNojOSltmw6wAggOSbqyIoAd8Ad4DjzNXX2N+Arcy9lVixJAYWHTy2BPAIVS0W926nQoLdp2PNirkXWp7JxB42GOFWFOIvq8YDK1A7jPWs8meOxRSda1Ppj1LJJedtOyGUuFVq1CBIeNcuPc7aCr9rqNXT+cQVOmMRaSr/iyLLuyxhsfae0wWkr0rOk5vkcicLRtOCMZX92laWWdXg/egz6PF055Sy4CtLRqPrNdlTfk2h2+eumvgZT3x/wVEst+MIH2uT2Duz8t8nW7kEsO/QP0hSUu2g1yhgAAAABJRU5ErkJggg=="/>
+					</a>
+
+					<!-- Email -->
+					<a href="#">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdtJREFUSEuNVut5wzAIvPMk6SbuJGkmqTtJvEnSSZpJTD8kLKGXY/3IJ0uIA45HiHoRgISf5koPxjddcTA/IAgxteU+gHU0j8D8ue7T4/fWlRJ9Z0v1EWC0DhHPuZQ8kE1mAHcAlxpP2WD4sRu/90fx/AXgRvIZgrPbISIPAApyemWcBv1F8kPRvAdiYguApXnc6NCEYPLMrlcAX7qfGGwvAaJLpIjMAtwZwmWKOtFxoUthEV0NgGb9fjFRs1W/lYtr8sYTYeba0cqJN8W3N3/BUNOTssj0651as5L8Uf9k22aAHfLlBdDIJERUDspjzPwAsHNgHlTsLgEkWxa8MRk1wFt9FWDxmaahzhx4AO9+8EZWcjJvQiorT0+lL1vd5m0EGHrQPEjeqFnbJhdQrgIuRaU646Y9RK4OYncbpaNxA+AXgkednzm8UUE3RJ1E6SF2CzG/NYCC5JAtIX07q9MXGilfK3EfQ5S7ixLmP2OkmiZUVttI5rDQeu31TOh829g7Qp2mDwHmYcMs07fmNH7naD458TOHKHKg/eeb1lEPo3NIi69wx0Esin1k+glp529mtee9HZlNVoynbd+IkXrXrmNjyh7kJ2dGY21z/pPghr4JvZ/8/XIZnP4DZpwWLnTDCR8AAAAASUVORK5CYII="/>
+					</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+
+
+	<script src="docs/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!--------Link to js---->
+	<script src="js/modal.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>
